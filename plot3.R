@@ -7,7 +7,7 @@ houseData[[1]] <- as.Date(houseData[[1]], format = "%d/%m/%Y")  # convert col 1 
 # houseData[[2]] <- strptime(houseData[[2]], format = "%H:%M:%S") # convert col 2 to time format
 
 # setup to print the graph into a png file
-png(file = "plot3.png", height = 640, width = 640)
+png(file = "plot3.png", height = 480, width = 480)
 
 # line plot of the active power by HMS time-series.  Have to combine the date & time columns to achieve this
 plot(strptime(paste(houseData$Date, houseData$Time), "%Y-%m-%d %H:%M:%S"), houseData[["Sub_metering_1"]], ylab = "Energy Sub Metering", xlab = "", type = "l")

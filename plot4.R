@@ -7,7 +7,7 @@ houseData[[1]] <- as.Date(houseData[[1]], format = "%d/%m/%Y")  # convert col 1 
 # houseData[[2]] <- strptime(houseData[[2]], format = "%H:%M:%S") # convert col 2 to time format
 
 # setup to print the graph into a png file
-png(file = "plot4.png", height = 640, width = 640)
+png(file = "plot4.png", height = 480, width = 480)
 
 # setup for a 2 x 2 plot page
 par(mfrow=c(2,2))
